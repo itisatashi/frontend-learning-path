@@ -11,6 +11,7 @@ This learning path is organized by technology and skill level:
   - A responsive HTML-only CV page
   - Demonstrates semantic HTML structure
   - Includes contact details, skills, education, and experience sections
+  - Project reference: https://roadmap.sh/projects/single-page-cv
 
 ### Upcoming Topics
 - CSS Fundamentals
