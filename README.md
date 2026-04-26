@@ -25,6 +25,12 @@ This learning path is organized by technology and skill level.
   - Practices semantic HTML, shared CSS, responsive layout, metadata, and accessible navigation
   - Project reference: https://roadmap.sh/projects/portfolio-website
 
+- **Changelog Component** (`html/changelog-component/`)
+  - A responsive changelog timeline component
+  - Includes dated changelog entries, timeline markers, and a call-to-action button
+  - Practices CSS positioning, layout, spacing, and responsive component design
+  - Project reference: https://roadmap.sh/projects/changelog-component
+
 ### Upcoming Topics
 
 - CSS Fundamentals
@@ -50,6 +56,7 @@ This learning path is organized by technology and skill level.
 
 3. **Open in browser**
    - Open `home.html` in your web browser for the personal portfolio
+   - Open `html/changelog-component/changelog.html` for the changelog component
    - Open `html/basic-html-website/home.html` for the basic HTML website
    - Open `html/single-page-cv/atashi-cv.html` for the single page CV
    - Or use a local server for a better development experience
@@ -64,6 +71,9 @@ frontend-learning-path/
 |   |   |-- contact.html
 |   |   |-- home.html
 |   |   `-- project.html
+|   |-- changelog-component/
+|   |   |-- changelog.html
+|   |   `-- style.css
 |   |-- personal-portfolio/
 |   |   |-- css/
 |   |   |   `-- style.css

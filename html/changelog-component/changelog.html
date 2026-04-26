@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A responsive changelog timeline component built with HTML and CSS."
+    />
+    <meta name="author" content="Tolegenov Atabek" />
+    <title>Changelog component</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="changelog-card">
+      <header class="changelog-header">
+        <h1>Changelog</h1>
+        <p>Here's everything we have shipped in the past few days</p>
+      </header>
+
+      <section class="timeline" aria-labelledby="timeline-heading">
+        <h2 id="timeline-heading" class="sr-only">Recent product updates</h2>
+        <ol class="timeline-list">
+          <li class="timeline-item">
+            <time datetime="2024-09-03">September 3, 2024</time>
+            <span class="timeline-marker" aria-hidden="true"></span>
+            <p>Announcing Projects on Frontend Roadmap</p>
+          </li>
+          <li class="timeline-item">
+            <time datetime="2024-08-28">August 28, 2024</time>
+            <span class="timeline-marker" aria-hidden="true"></span>
+            <p>Build your learning habits with learning streaks</p>
+          </li>
+          <li class="timeline-item">
+            <time datetime="2024-08-25">August 25, 2024</time>
+            <span class="timeline-marker" aria-hidden="true"></span>
+            <p>Git and GitHub Roadmap</p>
+          </li>
+          <li class="timeline-item">
+            <time datetime="2024-08-22">August 22, 2024</time>
+            <span class="timeline-marker" aria-hidden="true"></span>
+            <p>Submit your project solution and get feedback</p>
+          </li>
+          <li class="timeline-item">
+            <time datetime="2024-08-15">August 15, 2024</time>
+            <span class="timeline-marker" aria-hidden="true"></span>
+            <p>Backend Project Ideas</p>
+          </li>
+          <li class="timeline-item">
+            <time datetime="2024-08-10">August 10, 2024</time>
+            <span class="timeline-marker" aria-hidden="true"></span>
+            <p>Redis roadmap</p>
+          </li>
+          <li class="timeline-item">
+            <time datetime="2024-08-01">August 1, 2024</time>
+            <span class="timeline-marker" aria-hidden="true"></span>
+            <p>Changelog page to help you stay in the loop</p>
+          </li>
+        </ol>
+      </section>
+
+      <a class="changelog-link" href="#" aria-label="Visit the complete changelog">
+        Visit Complete Changelog
+      </a>
+    </main>
+  </body>
+</html>
