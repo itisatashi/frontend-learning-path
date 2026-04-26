@@ -1,0 +1,483 @@
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Inter:wght@400;500;600;700&display=swap");
+
+:root {
+  --bg: #fbfbf8;
+  --surface: #ffffff;
+  --surface-muted: #eef1f4;
+  --ink: #1e1f22;
+  --muted: #747d89;
+  --line: #202225;
+  --accent: #0b6ecb;
+  --accent-dark: #074f91;
+  --shadow: 0 18px 40px rgba(31, 35, 40, 0.08);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  color-scheme: light;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  color: var(--ink);
+  background: var(--bg);
+  font-family: Inter, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+a:hover,
+a:focus-visible {
+  color: var(--accent-dark);
+  text-decoration: underline;
+}
+
+header,
+main,
+.site-footer {
+  width: min(100%, 1240px);
+  margin: 0 auto;
+  background: var(--surface);
+}
+
+header {
+  border: 2px solid var(--line);
+  border-bottom: 0;
+}
+
+.site-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 1.5rem 2rem;
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.85rem;
+  color: var(--ink);
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.brand-mark {
+  width: 2.25rem;
+  aspect-ratio: 1;
+  display: inline-block;
+  border-radius: 8px;
+  background: var(--ink);
+  box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.1);
+}
+
+.nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: flex-end;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav-links li:not(:last-child)::after {
+  content: "/";
+  margin-left: 0.5rem;
+  color: var(--line);
+  font-weight: 700;
+}
+
+.nav-links a {
+  color: var(--ink);
+  font-size: 1.05rem;
+  font-weight: 500;
+}
+
+.nav-links a[aria-current="page"] {
+  color: var(--accent-dark);
+}
+
+.hero {
+  min-height: 220px;
+  display: grid;
+  place-items: center;
+  align-content: center;
+  gap: 0.5rem;
+  padding: 2rem;
+  text-align: center;
+}
+
+.hero h1,
+.panel h2,
+.reviews-section h2,
+.experience-card h3,
+.page-content h1,
+.page-content h2,
+.page-content h3,
+.site-footer p {
+  margin: 0;
+  font-family: "Architects Daughter", "Comic Sans MS", cursive;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+.hero h1 {
+  font-size: clamp(2.5rem, 6vw, 4.25rem);
+  line-height: 1.1;
+}
+
+.hero p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.compact-hero {
+  min-height: 150px;
+}
+
+.portfolio-layout {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr 1.3fr;
+  border: 2px solid var(--line);
+}
+
+.panel {
+  min-width: 0;
+  border-top: 2px solid var(--line);
+}
+
+.panel + .panel {
+  border-left: 2px solid var(--line);
+}
+
+.panel h2,
+.reviews-section h2 {
+  font-size: 1.7rem;
+  line-height: 1.2;
+}
+
+.projects-panel h2,
+.experience-panel h2,
+.education-panel h2 {
+  padding: 1.35rem 1.75rem 0.75rem;
+}
+
+.project-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.project-list li {
+  border-top: 2px solid var(--line);
+}
+
+.project-list a {
+  display: block;
+  padding: 0.8rem 1.75rem;
+  color: var(--ink);
+  font-weight: 500;
+}
+
+.project-list a:hover,
+.project-list a:focus-visible {
+  background: var(--surface-muted);
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.experience-card,
+.education-panel {
+  padding: 1rem 1.75rem 1.5rem;
+}
+
+.experience-card + .experience-card {
+  border-top: 2px solid var(--line);
+}
+
+.experience-card h3 {
+  margin-bottom: 0.65rem;
+  font-size: 1.25rem;
+}
+
+.experience-card p,
+.education-panel p,
+.education-panel ul {
+  margin: 0 0 1rem;
+}
+
+.education-panel ul {
+  padding-left: 1.1rem;
+}
+
+.reviews-section {
+  grid-column: 1 / -1;
+  padding: 2rem 3rem 5.5rem;
+  border-top: 2px solid var(--line);
+}
+
+.reviews-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+.review-card {
+  min-height: 160px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1.5rem;
+  border: 2px solid var(--line);
+  border-radius: 28px;
+}
+
+.review-card p {
+  margin: 0 0 1.5rem;
+}
+
+.review-card footer {
+  color: #b8bdc3;
+}
+
+.review-card strong,
+.review-card span {
+  display: block;
+  font-weight: 600;
+}
+
+.page-content {
+  padding: 2.5rem;
+  border: 2px solid var(--line);
+}
+
+.content-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.content-grid article,
+.article-list article,
+.contact-panel {
+  background: var(--surface);
+  border: 2px solid var(--line);
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+}
+
+.content-grid article {
+  padding: 1.25rem;
+}
+
+.content-grid h2,
+.article-list h3,
+.contact-panel h2 {
+  margin-bottom: 0.75rem;
+  font-size: 1.55rem;
+}
+
+.content-grid p,
+.article-list p {
+  margin: 0;
+}
+
+.article-list {
+  display: grid;
+  gap: 1rem;
+}
+
+.article-list article {
+  padding: 1.5rem;
+}
+
+.article-list p {
+  margin-bottom: 1rem;
+}
+
+.contact-panel {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+form {
+  display: grid;
+  gap: 0.85rem;
+}
+
+label {
+  font-weight: 700;
+}
+
+input,
+textarea,
+button {
+  width: 100%;
+  font: inherit;
+  border: 2px solid var(--line);
+  border-radius: 8px;
+}
+
+input,
+textarea {
+  padding: 0.8rem 0.9rem;
+  color: var(--ink);
+  background: var(--surface-muted);
+}
+
+textarea {
+  min-height: 150px;
+  resize: vertical;
+}
+
+button {
+  min-height: 48px;
+  padding: 0.8rem 1rem;
+  color: #fff;
+  background: var(--ink);
+  cursor: pointer;
+  font-weight: 700;
+}
+
+button:hover,
+button:focus-visible {
+  background: var(--accent-dark);
+}
+
+.site-footer {
+  display: grid;
+  min-height: 120px;
+  place-items: center;
+  padding: 1.5rem;
+  border-right: 2px solid var(--line);
+  border-bottom: 2px solid var(--line);
+  border-left: 2px solid var(--line);
+}
+
+.site-footer p {
+  font-size: 1.5rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #17191d;
+    --surface: #22252b;
+    --surface-muted: #2d3138;
+    --ink: #f2f5f8;
+    --muted: #a9b2bd;
+    --line: #f2f5f8;
+    --accent: #76b7ff;
+    --accent-dark: #a7d0ff;
+    --shadow: 0 18px 40px rgba(0, 0, 0, 0.24);
+  }
+}
+
+@media (max-width: 760px) {
+  body {
+    background: var(--surface);
+  }
+
+  header,
+  main,
+  .site-footer {
+    width: 100%;
+  }
+
+  .site-nav {
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1.35rem 1rem;
+    text-align: center;
+  }
+
+  .brand {
+    flex-direction: column;
+    gap: 0.65rem;
+  }
+
+  .nav-links {
+    justify-content: center;
+  }
+
+  .hero {
+    min-height: 150px;
+    padding: 1.25rem 1rem 1.75rem;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 0.95rem;
+  }
+
+  .portfolio-layout {
+    display: block;
+    border-right: 2px solid var(--line);
+    border-left: 2px solid var(--line);
+  }
+
+  .panel + .panel {
+    border-left: 0;
+  }
+
+  .panel h2,
+  .reviews-section h2 {
+    text-align: center;
+  }
+
+  .projects-panel h2,
+  .experience-panel h2,
+  .education-panel h2 {
+    padding: 1rem;
+  }
+
+  .project-list a {
+    text-align: center;
+  }
+
+  .experience-card,
+  .education-panel {
+    padding: 1.25rem 1.5rem;
+    background: var(--surface-muted);
+  }
+
+  .reviews-section {
+    padding: 1.5rem 1.25rem 2rem;
+  }
+
+  .reviews-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .reviews-grid .review-card:nth-child(n + 2) {
+    display: none;
+  }
+
+  .page-content {
+    padding: 1.25rem;
+  }
+
+  .site-footer {
+    min-height: 100px;
+  }
+}

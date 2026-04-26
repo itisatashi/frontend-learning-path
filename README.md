@@ -19,6 +19,12 @@ This learning path is organized by technology and skill level.
   - Practices semantic page structure, navigation, and linking between pages
   - Project reference: https://roadmap.sh/projects/basic-html-website
 
+- **Personal Portfolio** (`html/personal-portfolio/`)
+  - A styled multi-page portfolio website
+  - Includes home, projects, articles, and contact pages
+  - Practices semantic HTML, shared CSS, responsive layout, metadata, and accessible navigation
+  - Project reference: https://roadmap.sh/projects/portfolio-website
+
 ### Upcoming Topics
 
 - CSS Fundamentals
@@ -30,18 +36,21 @@ This learning path is organized by technology and skill level.
 ## Getting Started
 
 1. **Clone the repository**
+
    ```bash
    git clone https://github.com/itisatashi/frontend-learning-path.git
    cd frontend-learning-path
    ```
 
 2. **Navigate to a project**
+
    ```bash
-   cd html/basic-html-website
+   cd html/personal-portfolio
    ```
 
 3. **Open in browser**
-   - Open `home.html` in your web browser for the basic HTML website
+   - Open `home.html` in your web browser for the personal portfolio
+   - Open `html/basic-html-website/home.html` for the basic HTML website
    - Open `html/single-page-cv/atashi-cv.html` for the single page CV
    - Or use a local server for a better development experience
 
@@ -51,6 +60,13 @@ This learning path is organized by technology and skill level.
 frontend-learning-path/
 |-- html/
 |   |-- basic-html-website/
+|   |   |-- articles.html
+|   |   |-- contact.html
+|   |   |-- home.html
+|   |   `-- project.html
+|   |-- personal-portfolio/
+|   |   |-- css/
+|   |   |   `-- style.css
 |   |   |-- articles.html
 |   |   |-- contact.html
 |   |   |-- home.html
