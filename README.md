@@ -2,25 +2,32 @@
 
 A comprehensive journey through frontend development, from basics to advanced concepts. This repository contains projects, exercises, and resources to build a solid foundation in web development.
 
-## 📚 Learning Structure
+## Learning Structure
 
-This learning path is organized by technology and skill level:
+This learning path is organized by technology and skill level.
 
 ### HTML Fundamentals
+
 - **Single Page CV** (`html/single-page-cv/`)
-  - A responsive HTML-only CV page
-  - Demonstrates semantic HTML structure
+  - A semantic HTML-only CV page
   - Includes contact details, skills, education, and experience sections
   - Project reference: https://roadmap.sh/projects/single-page-cv
 
+- **Basic HTML Website** (`html/basic-html-website/`)
+  - A multi-page HTML website
+  - Includes home, projects, articles, and contact pages
+  - Practices semantic page structure, navigation, and linking between pages
+  - Project reference: https://roadmap.sh/projects/basic-html-website
+
 ### Upcoming Topics
+
 - CSS Fundamentals
 - JavaScript Basics
 - Responsive Design
-- Modern Frameworks (React, Vue, etc.)
+- Modern Frameworks
 - Build Tools and Deployment
 
-## 🚀 Getting Started
+## Getting Started
 
 1. **Clone the repository**
    ```bash
@@ -30,30 +37,31 @@ This learning path is organized by technology and skill level:
 
 2. **Navigate to a project**
    ```bash
-   cd html/single-page-cv
+   cd html/basic-html-website
    ```
 
 3. **Open in browser**
-   - Open `atashi-cv.html` in your web browser
-   - Or use a local server for better development experience
+   - Open `home.html` in your web browser for the basic HTML website
+   - Open `html/single-page-cv/atashi-cv.html` for the single page CV
+   - Or use a local server for a better development experience
 
-## 📁 Project Structure
+## Project Structure
 
-```
+```text
 frontend-learning-path/
-├── html/
-│   └── single-page-cv/
-│       ├── atashi-cv.html
-│       ├── README.md
-│       └── favicon.svg
-├── css/
-│   └── (coming soon)
-├── javascript/
-│   └── (coming soon)
-└── README.md
+|-- html/
+|   |-- basic-html-website/
+|   |   |-- articles.html
+|   |   |-- contact.html
+|   |   |-- home.html
+|   |   `-- project.html
+|   `-- single-page-cv/
+|       |-- atashi-cv.html
+|       `-- favicon.svg
+`-- README.md
 ```
 
-## 🎯 Learning Goals
+## Learning Goals
 
 - Master HTML semantic structure and accessibility
 - Learn CSS layout techniques and responsive design
@@ -61,34 +69,35 @@ frontend-learning-path/
 - Build modern web applications with frameworks
 - Deploy and maintain web projects
 
-## 🛠️ Technologies Covered
+## Technologies Covered
 
 - HTML5
 - CSS3
-- JavaScript (ES6+)
-- Git & GitHub
-- Build tools (Webpack, Vite)
+- JavaScript
+- Git and GitHub
+- Build tools
 - Testing frameworks
 - Deployment platforms
 
-## 📖 Resources
+## Resources
 
 - [MDN Web Docs](https://developer.mozilla.org/)
 - [freeCodeCamp](https://www.freecodecamp.org/)
 - [CSS-Tricks](https://css-tricks.com/)
 - [JavaScript.info](https://javascript.info/)
 
-## 🤝 Contributing
+## Contributing
 
 This is a personal learning repository, but feel free to:
+
 - Open issues for suggestions
 - Submit pull requests for improvements
 - Share your learning experiences
 
-## 📄 License
+## License
 
 This project is for educational purposes. Feel free to use the code for your own learning journey.
 
 ---
 
-*Happy coding! 🚀*
+Happy coding!
