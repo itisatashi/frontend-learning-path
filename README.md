@@ -37,6 +37,12 @@ This learning path is organized by technology and skill level.
   - Practices CSS grid, flexbox, positioning, and responsive component layout
   - Project reference: https://roadmap.sh/projects/testimonial-cards
 
+- **Datepicker UI** (`html/datapicker-ui/`)
+  - A static datepicker interface built with HTML and CSS
+  - Includes an input field, calendar icon button, month navigation, weekdays, and date grid
+  - Practices CSS positioning, grid layout, borders, and component styling
+  - Project reference: https://roadmap.sh/projects/datepicker-ui
+
 ### Upcoming Topics
 
 - CSS Fundamentals
@@ -64,6 +70,7 @@ This learning path is organized by technology and skill level.
    - Open `home.html` in your web browser for the personal portfolio
    - Open `html/changelog-component/changelog.html` for the changelog component
    - Open `html/testimonial-cards/index.html` for the testimonial cards
+   - Open `html/datapicker-ui/index.html` for the datepicker UI
    - Open `html/basic-html-website/home.html` for the basic HTML website
    - Open `html/single-page-cv/atashi-cv.html` for the single page CV
    - Or use a local server for a better development experience
@@ -80,6 +87,9 @@ frontend-learning-path/
 |   |   `-- project.html
 |   |-- changelog-component/
 |   |   |-- changelog.html
+|   |   `-- style.css
+|   |-- datapicker-ui/
+|   |   |-- index.html
 |   |   `-- style.css
 |   |-- personal-portfolio/
 |   |   |-- css/
