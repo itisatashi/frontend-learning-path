@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <main class="tabs-card">
+      <div class="tabs">
+        <button class="tab active" data-tab="first">First Tab</button>
+        <button class="tab" data-tab="second">Second Tab</button>
+        <button class="tab" data-tab="third">Third Tab</button>
+        <button class="tab" data-tab="fourth">Fourth Tab</button>
+      </div>
+
+      <p class="description">
+        Clicking each tab should hide the content of the other tab and show the
+        content of clicked tab. By default, enable the first tab.
+      </p>
+
+      <section class="tab-content active" id="first">
+        First Tab content to be displayed here.
+      </section>
+
+      <section class="tab-content" id="second">
+        Second Tab content to be displayed here.
+      </section>
+
+      <section class="tab-content" id="third">
+        Third Tab content to be displayed here.
+      </section>
+
+      <section class="tab-content" id="fourth">
+        Fourth Tab content to be displayed here.
+      </section>
+
+      <p class="footer-text">
+        Add some dummy content or just add a simple text showing the tab
+      </p>
+    </main>
+
+    <script src="index.js"></script>
+  </body>
+</html>

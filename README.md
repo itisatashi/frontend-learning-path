@@ -61,10 +61,17 @@ This learning path is organized by technology and skill level.
   - Practices pseudo-elements, positioning, transitions, and hover states
   - Project reference: https://roadmap.sh/projects/tooltip-ui
 
+### JavaScript Basics
+
+- **Simple Tabs** (`js/tabs/`)
+  - An interactive tab component built with HTML, CSS, and JavaScript
+  - Includes four tabs with the first tab active by default
+  - Practices DOM selection, event listeners, data attributes, and class toggling
+  - Project reference: https://roadmap.sh/projects/simple-tabs
+
 ### Upcoming Topics
 
 - CSS Fundamentals
-- JavaScript Basics
 - Responsive Design
 - Modern Frameworks
 - Build Tools and Deployment
@@ -92,6 +99,7 @@ This learning path is organized by technology and skill level.
    - Open `html/accesible-form-ui/index.html` for the accessible form UI
    - Open `html/image-grid-layout/index.html` for the image grid layout
    - Open `html/tooltip-ui/index.html` for the tooltip UI
+   - Open `js/tabs/index.html` for the simple tabs component
    - Open `html/basic-html-website/home.html` for the basic HTML website
    - Open `html/single-page-cv/atashi-cv.html` for the single page CV
    - Or use a local server for a better development experience
@@ -135,6 +143,11 @@ frontend-learning-path/
 |   `-- tooltip-ui/
 |       |-- index.css
 |       `-- index.html
+|-- js/
+|   `-- tabs/
+|       |-- index.css
+|       |-- index.html
+|       `-- index.js
 `-- README.md
 ```
 
