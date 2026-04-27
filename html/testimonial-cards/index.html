@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Responsive testimonial cards built with HTML and CSS."
+    />
+    <meta name="author" content="Tolegenov Atabek" />
+    <title>Testimonial Cards</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="testimonials" aria-labelledby="page-title">
+      <h1 id="page-title" class="sr-only">Testimonial Cards</h1>
+
+      <section class="top-grid" aria-label="Featured testimonials">
+        <article class="testimonial">
+          <blockquote class="speech-bubble">
+            <p>
+              I have been solving all the project ideas on roadmap.sh and I am
+              surprised how far I have come from where I started.
+            </p>
+            <p>Highly recommended!</p>
+          </blockquote>
+
+          <footer class="profile profile-offset">
+            <img
+              src="https://i.pravatar.cc/180?img=12"
+              alt="Portrait of Artem Jones"
+            />
+            <div>
+              <h2>Artem Jones</h2>
+              <p>Junior Frontend Developer</p>
+            </div>
+          </footer>
+        </article>
+
+        <article class="testimonial outlined-card">
+          <p>
+            Since starting my career in 2021, I have only followed one
+            resource, roadmap.sh, it truly helped me go from 0 to having a job
+            and changing the financial trajectory of my family
+          </p>
+
+          <footer class="profile">
+            <img
+              src="https://i.pravatar.cc/180?img=11"
+              alt="Portrait of Artem Jones"
+            />
+            <div>
+              <h2>Artem Jones</h2>
+              <p>Junior Frontend Developer</p>
+            </div>
+          </footer>
+        </article>
+      </section>
+
+      <section class="feature-row" aria-label="Manager testimonial">
+        <img
+          class="feature-photo"
+          src="https://i.pravatar.cc/640?img=47"
+          alt="Portrait of Jackie Mackle"
+        />
+
+        <article class="testimonial dark-card">
+          <div class="rating" aria-label="5 out of 5 stars">
+            <span aria-hidden="true">&#9733;</span>
+            <span aria-hidden="true">&#9733;</span>
+            <span aria-hidden="true">&#9733;</span>
+            <span aria-hidden="true">&#9733;</span>
+            <span aria-hidden="true">&#9733;</span>
+          </div>
+          <h2>Jackie Mackle</h2>
+          <p class="role">Engineering Manager</p>
+          <blockquote>
+            I find myself recommending roadmap.sh to all the internees or
+            junior developers. It's a great way to skill up and grow in your
+            career.
+          </blockquote>
+        </article>
+      </section>
+
+      <section class="carousel-card" aria-label="Selected testimonial">
+        <blockquote>
+          roadmap.sh is an incredible resource. I was fortunate to discover it
+          during my university days in 2018. Back then, it was just a single
+          repository with three images. It's amazing to see how much impact it
+          has had on millions of lives since then.
+        </blockquote>
+
+        <div class="carousel-controls" aria-label="Testimonial selector">
+          <button type="button" aria-label="Previous testimonial">
+            &lsaquo;
+          </button>
+          <img
+            class="avatar faded"
+            src="https://i.pravatar.cc/120?img=11"
+            alt=""
+            aria-hidden="true"
+          />
+          <img
+            class="avatar active"
+            src="https://i.pravatar.cc/140?img=12"
+            alt="Portrait of Artem Jones"
+          />
+          <img
+            class="avatar faded"
+            src="https://i.pravatar.cc/120?img=11"
+            alt=""
+            aria-hidden="true"
+          />
+          <button type="button" aria-label="Next testimonial">
+            &rsaquo;
+          </button>
+        </div>
+
+        <p class="carousel-name">Artem Jones</p>
+      </section>
+    </main>
+  </body>
+</html>

@@ -31,6 +31,12 @@ This learning path is organized by technology and skill level.
   - Practices CSS positioning, layout, spacing, and responsive component design
   - Project reference: https://roadmap.sh/projects/changelog-component
 
+- **Testimonial Cards** (`html/testimonial-cards/`)
+  - A responsive collection of testimonial cards
+  - Includes speech-bubble, bordered, dark review, and carousel-style cards
+  - Practices CSS grid, flexbox, positioning, and responsive component layout
+  - Project reference: https://roadmap.sh/projects/testimonial-cards
+
 ### Upcoming Topics
 
 - CSS Fundamentals
@@ -57,6 +63,7 @@ This learning path is organized by technology and skill level.
 3. **Open in browser**
    - Open `home.html` in your web browser for the personal portfolio
    - Open `html/changelog-component/changelog.html` for the changelog component
+   - Open `html/testimonial-cards/index.html` for the testimonial cards
    - Open `html/basic-html-website/home.html` for the basic HTML website
    - Open `html/single-page-cv/atashi-cv.html` for the single page CV
    - Or use a local server for a better development experience
@@ -81,9 +88,12 @@ frontend-learning-path/
 |   |   |-- contact.html
 |   |   |-- home.html
 |   |   `-- project.html
-|   `-- single-page-cv/
-|       |-- atashi-cv.html
-|       `-- favicon.svg
+|   |-- single-page-cv/
+|   |   |-- atashi-cv.html
+|   |   `-- favicon.svg
+|   `-- testimonial-cards/
+|       |-- index.html
+|       `-- style.css
 `-- README.md
 ```
 
