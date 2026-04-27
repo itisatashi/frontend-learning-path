@@ -43,6 +43,12 @@ This learning path is organized by technology and skill level.
   - Practices CSS positioning, grid layout, borders, and component styling
   - Project reference: https://roadmap.sh/projects/datepicker-ui
 
+- **Accessible Form UI** (`html/accesible-form-ui/`)
+  - A static accessible profile form built with HTML and CSS
+  - Includes labeled inputs, password visibility buttons, an error state, progress indicator, and completion checklist
+  - Practices form accessibility, ARIA attributes, focus states, responsive layout, and component styling
+  - Project reference: https://roadmap.sh/projects/accessible-form-ui
+
 ### Upcoming Topics
 
 - CSS Fundamentals
@@ -71,6 +77,7 @@ This learning path is organized by technology and skill level.
    - Open `html/changelog-component/changelog.html` for the changelog component
    - Open `html/testimonial-cards/index.html` for the testimonial cards
    - Open `html/datapicker-ui/index.html` for the datepicker UI
+   - Open `html/accesible-form-ui/index.html` for the accessible form UI
    - Open `html/basic-html-website/home.html` for the basic HTML website
    - Open `html/single-page-cv/atashi-cv.html` for the single page CV
    - Or use a local server for a better development experience
@@ -80,6 +87,9 @@ This learning path is organized by technology and skill level.
 ```text
 frontend-learning-path/
 |-- html/
+|   |-- accesible-form-ui/
+|   |   |-- index.css
+|   |   `-- index.html
 |   |-- basic-html-website/
 |   |   |-- articles.html
 |   |   |-- contact.html

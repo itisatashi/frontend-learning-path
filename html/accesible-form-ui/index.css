@@ -1,0 +1,271 @@
+:root {
+  --ink: #1f2023;
+  --muted: #6f747a;
+  --panel: #ececec;
+  --danger: #d92f3a;
+  --focus: #1a73e8;
+  --bg: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family:
+    Inter,
+    ui-sans-serif,
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+.page-shell {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+}
+
+.profile-card {
+  width: min(100%, 1040px);
+  display: grid;
+  grid-template-columns: minmax(320px, 1fr) minmax(300px, 430px);
+  gap: clamp(42px, 7vw, 96px);
+  align-items: center;
+  border: 3px solid var(--ink);
+  border-radius: 48px;
+  padding: clamp(34px, 7vw, 78px);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.profile-form {
+  display: grid;
+  gap: 26px;
+}
+
+.form-field {
+  display: grid;
+  gap: 10px;
+}
+
+label,
+.progress-panel h2 {
+  font-size: clamp(1.55rem, 2.7vw, 2.25rem);
+  line-height: 1.1;
+  font-weight: 500;
+  letter-spacing: 0;
+}
+
+input {
+  width: 100%;
+  min-height: 68px;
+  border: 3px solid var(--ink);
+  border-radius: 15px;
+  padding: 14px 20px;
+  color: var(--ink);
+  background: #fff;
+  outline: none;
+  font-size: clamp(1.2rem, 2.4vw, 1.9rem);
+  line-height: 1.2;
+}
+
+input::placeholder {
+  color: #c9cfd6;
+  opacity: 1;
+}
+
+input:focus,
+.visibility-button:focus-visible,
+.update-button:focus-visible {
+  outline: 4px solid var(--focus);
+  outline-offset: 4px;
+}
+
+.form-field--error input {
+  border-color: var(--danger);
+  color: var(--danger);
+}
+
+.field-error {
+  margin: 2px 0 22px;
+  color: var(--danger);
+  font-size: clamp(1rem, 2vw, 1.45rem);
+  line-height: 1.25;
+}
+
+.password-control {
+  position: relative;
+}
+
+.password-control input {
+  padding-right: 74px;
+}
+
+.visibility-button {
+  position: absolute;
+  top: 50%;
+  right: 18px;
+  transform: translateY(-50%);
+  width: 44px;
+  height: 44px;
+  display: grid;
+  place-items: center;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  color: #000;
+  background: transparent;
+  cursor: pointer;
+}
+
+.visibility-button svg {
+  width: 36px;
+  height: 36px;
+  fill: currentColor;
+}
+
+.update-button {
+  min-height: 76px;
+  margin-top: 10px;
+  border: 0;
+  border-radius: 18px;
+  background: #000;
+  color: #fff;
+  font-size: clamp(1.35rem, 2.6vw, 2rem);
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.update-button:hover {
+  background: #2d2d2d;
+}
+
+.progress-panel {
+  display: grid;
+  justify-items: center;
+  gap: 34px;
+}
+
+.progress-ring {
+  --value: 65%;
+  width: clamp(150px, 18vw, 200px);
+  aspect-ratio: 1;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: conic-gradient(#000 0 var(--value), #8f969c var(--value) 100%);
+  position: relative;
+}
+
+.progress-ring::before {
+  content: "";
+  position: absolute;
+  inset: 9px;
+  border-radius: inherit;
+  background: #fff;
+}
+
+.progress-ring span {
+  position: relative;
+  z-index: 1;
+  font-size: clamp(2rem, 4.2vw, 3.1rem);
+  font-weight: 700;
+}
+
+.progress-panel h2 {
+  margin: 8px 0 0;
+  text-align: center;
+}
+
+.completion-list {
+  width: 100%;
+  min-height: 420px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  margin: 0;
+  padding: clamp(36px, 4vw, 52px);
+  border-radius: 42px;
+  background: var(--panel);
+  list-style: none;
+  font-size: clamp(1.15rem, 2vw, 1.65rem);
+  line-height: 1.25;
+}
+
+.completion-list li {
+  color: var(--ink);
+}
+
+.completion-list .is-complete {
+  color: var(--muted);
+  text-decoration-line: line-through;
+  text-decoration-thickness: 2px;
+}
+
+@media (max-width: 800px) {
+  .page-shell {
+    place-items: start center;
+    padding: 16px;
+  }
+
+  .profile-card {
+    grid-template-columns: 1fr;
+    border-radius: 30px;
+  }
+
+  .progress-panel {
+    gap: 24px;
+  }
+
+  .completion-list {
+    min-height: 0;
+    border-radius: 24px;
+  }
+}
+
+@media (max-width: 460px) {
+  .profile-card {
+    padding: 26px 18px;
+  }
+
+  input {
+    min-height: 58px;
+    padding-inline: 14px;
+  }
+
+  .password-control input {
+    padding-right: 58px;
+  }
+
+  .visibility-button {
+    right: 10px;
+  }
+
+  .completion-list {
+    padding: 28px 22px;
+  }
+}

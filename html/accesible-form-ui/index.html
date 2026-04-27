@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Accessible Form UI</title>
+  </head>
+  <body>
+    <main class="page-shell">
+      <section class="profile-card" aria-labelledby="profile-form-title">
+        <h1 id="profile-form-title" class="sr-only">Update profile form</h1>
+
+        <form class="profile-form" action="#" method="post" novalidate>
+          <div class="form-field">
+            <label for="full-name">Full Name</label>
+            <input
+              id="full-name"
+              name="full-name"
+              type="text"
+              autocomplete="name"
+              placeholder="What should we call you?"
+              aria-required="true"
+            />
+          </div>
+
+          <div class="form-field form-field--error">
+            <label for="email">Email</label>
+            <input
+              id="email"
+              name="email"
+              type="email"
+              autocomplete="email"
+              value="john@doe.com"
+              aria-required="true"
+              aria-invalid="true"
+              aria-describedby="email-error"
+            />
+            <p id="email-error" class="field-error" role="alert">
+              Email is already taken
+            </p>
+          </div>
+
+          <div class="form-field">
+            <label for="password">Enter Password</label>
+            <div class="password-control">
+              <input
+                id="password"
+                name="password"
+                type="password"
+                autocomplete="new-password"
+                placeholder="xxxxxxxx"
+                aria-required="true"
+              />
+              <button
+                class="visibility-button"
+                type="button"
+                aria-label="Password is hidden. Show password"
+                aria-pressed="false"
+              >
+                <svg aria-hidden="true" viewBox="0 0 24 24" focusable="false">
+                  <path
+                    d="M12 5.5c5.1 0 8.7 4.4 9.8 6.1.3.4.3.8 0 1.2-1.1 1.7-4.7 6.1-9.8 6.1s-8.7-4.4-9.8-6.1a1.1 1.1 0 0 1 0-1.2C3.3 9.9 6.9 5.5 12 5.5Zm0 10.1a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7Zm0-2.2a1.3 1.3 0 1 1 0-2.6 1.3 1.3 0 0 1 0 2.6Z"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <div class="form-field">
+            <label for="confirm-password">Confirm Password</label>
+            <div class="password-control">
+              <input
+                id="confirm-password"
+                name="confirm-password"
+                type="password"
+                autocomplete="new-password"
+                placeholder="xxxxxxxx"
+                aria-required="true"
+              />
+              <button
+                class="visibility-button"
+                type="button"
+                aria-label="Password confirmation is hidden. Show password confirmation"
+                aria-pressed="false"
+              >
+                <svg aria-hidden="true" viewBox="0 0 24 24" focusable="false">
+                  <path
+                    d="M12 5.5c5.1 0 8.7 4.4 9.8 6.1.3.4.3.8 0 1.2-1.1 1.7-4.7 6.1-9.8 6.1s-8.7-4.4-9.8-6.1a1.1 1.1 0 0 1 0-1.2C3.3 9.9 6.9 5.5 12 5.5Zm0 10.1a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7Zm0-2.2a1.3 1.3 0 1 1 0-2.6 1.3 1.3 0 0 1 0 2.6Z"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <button class="update-button" type="submit">Update Profile</button>
+        </form>
+
+        <aside class="progress-panel" aria-labelledby="progress-title">
+          <div
+            class="progress-ring"
+            role="progressbar"
+            aria-valuemin="0"
+            aria-valuemax="100"
+            aria-valuenow="65"
+            aria-label="Profile completeness"
+          >
+            <span>65%</span>
+          </div>
+
+          <h2 id="progress-title">Profile Completeness</h2>
+
+          <ul class="completion-list" aria-label="Profile completion tasks">
+            <li class="is-complete">Create Account</li>
+            <li class="is-complete">Update Roadmap Progress</li>
+            <li class="is-complete">Setup Public Profile</li>
+            <li>Complete your first project</li>
+            <li>Invite your Friends</li>
+          </ul>
+        </aside>
+      </section>
+    </main>
+  </body>
+</html>
