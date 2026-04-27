@@ -49,6 +49,12 @@ This learning path is organized by technology and skill level.
   - Practices form accessibility, ARIA attributes, focus states, responsive layout, and component styling
   - Project reference: https://roadmap.sh/projects/accessible-form-ui
 
+- **Image Grid Layout** (`html/image-grid-layout/`)
+  - A responsive image gallery built with HTML and CSS
+  - Includes six local images arranged with CSS Grid
+  - Practices grid columns, row spanning, gaps, and image object fitting
+  - Project reference: https://roadmap.sh/projects/image-grid
+
 ### Upcoming Topics
 
 - CSS Fundamentals
@@ -78,6 +84,7 @@ This learning path is organized by technology and skill level.
    - Open `html/testimonial-cards/index.html` for the testimonial cards
    - Open `html/datapicker-ui/index.html` for the datepicker UI
    - Open `html/accesible-form-ui/index.html` for the accessible form UI
+   - Open `html/image-grid-layout/index.html` for the image grid layout
    - Open `html/basic-html-website/home.html` for the basic HTML website
    - Open `html/single-page-cv/atashi-cv.html` for the single page CV
    - Or use a local server for a better development experience
@@ -101,6 +108,10 @@ frontend-learning-path/
 |   |-- datapicker-ui/
 |   |   |-- index.html
 |   |   `-- style.css
+|   |-- image-grid-layout/
+|   |   |-- images/
+|   |   |-- index.css
+|   |   `-- index.html
 |   |-- personal-portfolio/
 |   |   |-- css/
 |   |   |   `-- style.css
