@@ -69,6 +69,12 @@ This learning path is organized by technology and skill level.
   - Practices DOM selection, event listeners, data attributes, and class toggling
   - Project reference: https://roadmap.sh/projects/simple-tabs
 
+- **Cookie Consent** (`js/cookie-consent/`)
+  - A cookie consent popup built with HTML, CSS, and JavaScript
+  - Includes a close button, accept button, and local storage persistence
+  - Practices DOM events, class toggling, and saving browser state
+  - Project reference: https://roadmap.sh/projects/cookie-consent
+
 ### Upcoming Topics
 
 - CSS Fundamentals
@@ -100,6 +106,7 @@ This learning path is organized by technology and skill level.
    - Open `html/image-grid-layout/index.html` for the image grid layout
    - Open `html/tooltip-ui/index.html` for the tooltip UI
    - Open `js/tabs/index.html` for the simple tabs component
+   - Open `js/cookie-consent/index.html` for the cookie consent popup
    - Open `html/basic-html-website/home.html` for the basic HTML website
    - Open `html/single-page-cv/atashi-cv.html` for the single page CV
    - Or use a local server for a better development experience
@@ -144,6 +151,10 @@ frontend-learning-path/
 |       |-- index.css
 |       `-- index.html
 |-- js/
+|   |-- cookie-consent/
+|   |   |-- index.css
+|   |   |-- index.html
+|   |   `-- index.js
 |   `-- tabs/
 |       |-- index.css
 |       |-- index.html
