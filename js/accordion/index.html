@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FAQ Accordion</title>
+    <link rel="stylesheet" href="index.css" />
+    <script src="index.js" defer></script>
+  </head>
+  <body>
+    <main class="page-shell">
+      <section class="faq" aria-labelledby="faq-title">
+        <header class="faq__header">
+          <h1 id="faq-title">Frequently Asked Questions</h1>
+          <p>Here are some of the frequently asked questions</p>
+        </header>
+
+        <div class="accordion" data-accordion>
+          <article class="accordion__item is-open">
+            <h2 class="accordion__heading">
+              <button
+                class="accordion__trigger"
+                type="button"
+                aria-expanded="true"
+                aria-controls="accordion-panel-1"
+                id="accordion-trigger-1"
+                data-accordion-trigger
+              >
+                <span>What is roadmap.sh?</span>
+                <span class="accordion__icon" aria-hidden="true"></span>
+              </button>
+            </h2>
+            <div
+              class="accordion__panel"
+              id="accordion-panel-1"
+              role="region"
+              aria-labelledby="accordion-trigger-1"
+              data-accordion-panel
+            >
+              <p>
+                roadmap.sh is a community effort to create learning paths,
+                guides, project ideas and other similar content to help
+                developers grow in their careers.
+              </p>
+            </div>
+          </article>
+
+          <article class="accordion__item">
+            <h2 class="accordion__heading">
+              <button
+                class="accordion__trigger"
+                type="button"
+                aria-expanded="false"
+                aria-controls="accordion-panel-2"
+                id="accordion-trigger-2"
+                data-accordion-trigger
+              >
+                <span>What are the plans for roadmap.sh?</span>
+                <span class="accordion__icon" aria-hidden="true"></span>
+              </button>
+            </h2>
+            <div
+              class="accordion__panel"
+              id="accordion-panel-2"
+              role="region"
+              aria-labelledby="accordion-trigger-2"
+              hidden
+              data-accordion-panel
+            >
+              <p>
+                The plan is to keep improving existing roadmaps, adding new
+                learning paths, and building tools that help developers practice
+                and track their progress.
+              </p>
+            </div>
+          </article>
+
+          <article class="accordion__item">
+            <h2 class="accordion__heading">
+              <button
+                class="accordion__trigger"
+                type="button"
+                aria-expanded="false"
+                aria-controls="accordion-panel-3"
+                id="accordion-trigger-3"
+                data-accordion-trigger
+              >
+                <span>How is roadmap.sh built?</span>
+                <span class="accordion__icon" aria-hidden="true"></span>
+              </button>
+            </h2>
+            <div
+              class="accordion__panel"
+              id="accordion-panel-3"
+              role="region"
+              aria-labelledby="accordion-trigger-3"
+              hidden
+              data-accordion-panel
+            >
+              <p>
+                roadmap.sh is built with open-source tools and maintained by a
+                community of contributors who suggest updates, fixes, and new
+                roadmap ideas.
+              </p>
+            </div>
+          </article>
+
+          <article class="accordion__item">
+            <h2 class="accordion__heading">
+              <button
+                class="accordion__trigger"
+                type="button"
+                aria-expanded="false"
+                aria-controls="accordion-panel-4"
+                id="accordion-trigger-4"
+                data-accordion-trigger
+              >
+                <span>Can I use roadmap.sh in my team?</span>
+                <span class="accordion__icon" aria-hidden="true"></span>
+              </button>
+            </h2>
+            <div
+              class="accordion__panel"
+              id="accordion-panel-4"
+              role="region"
+              aria-labelledby="accordion-trigger-4"
+              hidden
+              data-accordion-panel
+            >
+              <p>
+                Yes. Teams can use roadmap.sh to align learning goals, discuss
+                career paths, and give developers a shared reference for growth.
+              </p>
+            </div>
+          </article>
+
+          <article class="accordion__item">
+            <h2 class="accordion__heading">
+              <button
+                class="accordion__trigger"
+                type="button"
+                aria-expanded="false"
+                aria-controls="accordion-panel-5"
+                id="accordion-trigger-5"
+                data-accordion-trigger
+              >
+                <span>How can I create custom roadmaps?</span>
+                <span class="accordion__icon" aria-hidden="true"></span>
+              </button>
+            </h2>
+            <div
+              class="accordion__panel"
+              id="accordion-panel-5"
+              role="region"
+              aria-labelledby="accordion-trigger-5"
+              hidden
+              data-accordion-panel
+            >
+              <p>
+                You can create custom roadmaps by choosing the topics you want
+                to cover, arranging them into a clear path, and sharing that
+                path with your team or community.
+              </p>
+            </div>
+          </article>
+
+          <article class="accordion__item">
+            <h2 class="accordion__heading">
+              <button
+                class="accordion__trigger"
+                type="button"
+                aria-expanded="false"
+                aria-controls="accordion-panel-6"
+                id="accordion-trigger-6"
+                data-accordion-trigger
+              >
+                <span
+                  >Is roadmap.sh really 7th most starred project on
+                  GitHub?</span
+                >
+                <span class="accordion__icon" aria-hidden="true"></span>
+              </button>
+            </h2>
+            <div
+              class="accordion__panel"
+              id="accordion-panel-6"
+              role="region"
+              aria-labelledby="accordion-trigger-6"
+              hidden
+              data-accordion-panel
+            >
+              <p>
+                Its ranking can change over time, but roadmap.sh has become one
+                of the most popular open-source developer learning projects on
+                GitHub.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

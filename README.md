@@ -63,6 +63,12 @@ This learning path is organized by technology and skill level.
 
 ### JavaScript Basics
 
+- **Accordion** (`js/accordion/`)
+  - A FAQ accordion component built with HTML and CSS, ready for JavaScript interactivity
+  - Includes accessible buttons, controlled panels, and state hooks for toggling open items
+  - Practices semantic markup, ARIA attributes, responsive styling, and DOM-ready structure
+  - Project reference: https://roadmap.sh/projects/accordion
+
 - **Simple Tabs** (`js/tabs/`)
   - An interactive tab component built with HTML, CSS, and JavaScript
   - Includes four tabs with the first tab active by default
@@ -111,6 +117,7 @@ This learning path is organized by technology and skill level.
    - Open `html/accesible-form-ui/index.html` for the accessible form UI
    - Open `html/image-grid-layout/index.html` for the image grid layout
    - Open `html/tooltip-ui/index.html` for the tooltip UI
+   - Open `js/accordion/index.html` for the accordion component
    - Open `js/tabs/index.html` for the simple tabs component
    - Open `js/cookie-consent/index.html` for the cookie consent popup
    - Open `js/restricted-textarea/index.html` for the restricted textarea component
@@ -158,6 +165,10 @@ frontend-learning-path/
 |       |-- index.css
 |       `-- index.html
 |-- js/
+|   |-- accordion/
+|   |   |-- index.css
+|   |   |-- index.html
+|   |   `-- index.js
 |   |-- cookie-consent/
 |   |   |-- index.css
 |   |   |-- index.html
