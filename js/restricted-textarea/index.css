@@ -1,0 +1,57 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 40px;
+  color: #111;
+}
+
+main {
+  max-width: 700px;
+}
+
+h1 {
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+.textarea-wrapper {
+  position: relative;
+  border: 3px solid #111;
+  padding: 24px;
+  border-radius: 23px;
+}
+
+.textarea-wrapper.limit {
+  border-color: #e03131;
+}
+
+textarea {
+  width: 100%;
+  min-height: 180px;
+  border: none;
+  outline: none;
+  resize: none;
+  font: inherit;
+  font-size: 24px;
+}
+
+.textarea-wrapper.limit textarea,
+.textarea-wrapper.limit .counter {
+  color: #e03131;
+}
+
+textarea::placeholder {
+  color: #aaa;
+}
+
+.counter {
+  position: absolute;
+  right: 24px;
+  bottom: 18px;
+  margin: 0;
+  font-size: 22px;
+}

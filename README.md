@@ -75,6 +75,12 @@ This learning path is organized by technology and skill level.
   - Practices DOM events, class toggling, and saving browser state
   - Project reference: https://roadmap.sh/projects/cookie-consent
 
+- **Restricted Textarea** (`js/restricted-textarea/`)
+  - A textarea component with a live character counter and maximum length
+  - Includes a 250-character limit and red limit-reached state
+  - Practices DOM selection, input events, text updates, and class toggling
+  - Project reference: https://roadmap.sh/projects/restricted-textarea
+
 ### Upcoming Topics
 
 - CSS Fundamentals
@@ -107,6 +113,7 @@ This learning path is organized by technology and skill level.
    - Open `html/tooltip-ui/index.html` for the tooltip UI
    - Open `js/tabs/index.html` for the simple tabs component
    - Open `js/cookie-consent/index.html` for the cookie consent popup
+   - Open `js/restricted-textarea/index.html` for the restricted textarea component
    - Open `html/basic-html-website/home.html` for the basic HTML website
    - Open `html/single-page-cv/atashi-cv.html` for the single page CV
    - Or use a local server for a better development experience
@@ -152,6 +159,10 @@ frontend-learning-path/
 |       `-- index.html
 |-- js/
 |   |-- cookie-consent/
+|   |   |-- index.css
+|   |   |-- index.html
+|   |   `-- index.js
+|   |-- restricted-textarea/
 |   |   |-- index.css
 |   |   |-- index.html
 |   |   `-- index.js
